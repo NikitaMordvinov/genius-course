@@ -1,0 +1,33 @@
+.input {
+    margin-bottom: 32px;
+
+    &__label {
+        display: block;
+        font-size: 16px;
+        line-height: 1.17;
+    }
+
+    &__control {
+        background-color: transparent;
+        width: 100%;
+        padding: 16px 42px;
+        border: 1.5px solid var(--color-secondary-dark);
+        border-radius: 8px;
+
+        &:focus {
+            border-color: var(--color-brand-normal);
+            outline: none;
+        }
+
+        &::-moz-placeholder {
+            color: var(--color-secondary-dark);
+            font-size: 16px;
+            line-height: 1.17;
+        }
+
+        &:focus::-moz-placeholder {
+            color: var(--color-primary-dark);
+        }
+    }
+
+}
